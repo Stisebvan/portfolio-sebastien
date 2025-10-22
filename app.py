@@ -10,7 +10,10 @@ page = st.sidebar.radio("Aller à", ["Accueil", "Projets", "À propos", "Contact
 def header():
     st.title("Transformer les données en décisions")
     st.caption("Portfolio de **Sébastien Stival** – Manager Gestion du Risque & Data Product Manager")
-    st.image("logo.jpg", use_container_width=True)
+    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
+    st.image("logo.jpg", width=500)
+    st.markdown("</div>", unsafe_allow_html=True)
+
 
 
 # --- Pages ---
